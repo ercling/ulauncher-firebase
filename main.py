@@ -19,111 +19,116 @@ class KeywordQueryEventListener(EventListener):
         query = event.get_argument() or ""
 
         array = [
-            # [
-            #     "Dashboard",
-            #     OpenUrlAction("https://console.cloud.google.com/home/dashboard"),
-            #     "images/gcp_logo.png"
-            # ],
-            # [
-            #     "Compute Engine",
-            #     OpenUrlAction("https://console.cloud.google.com/compute"),
-            #     "images/compute_icon.png"
-            # ],
-            # [
-            #     "Kubernetes Engine",
-            #     OpenUrlAction("https://console.cloud.google.com/kubernetes"),
-            #     "images/kube_icon.png"
-            # ],
-            # [
-            #     "Cloud SQL",
-            #     OpenUrlAction("https://console.cloud.google.com/sql"),
-            #     "images/sql_icon.png"
-            # ],
-            # [
-            #     "App Engine",
-            #     OpenUrlAction("https://console.cloud.google.com/appengine"),
-            #     "images/app_engine_icon.png"
-            # ],
             [
-                "Cloud Functions",
-                OpenUrlAction("https://console.firebase.google.com/project/_/functions/list/"),
-                "images/functions.png"
+                "Project Overview",
+                OpenUrlAction("https://console.firebase.google.com/project/_/overview"),
+                "images/firebase_logo.png"
             ],
             [
                 "Authentication",
                 OpenUrlAction("https://console.firebase.google.com/project/_/authentication/users"),
                 "images/auth.png"
             ],
-            # [
-            #     "BigQuery",
-            #     OpenUrlAction("https://console.cloud.google.com/bigquery"),
-            #     "images/big_query.png"
-            # ],
-            # [
-            #     "Storage",
-            #     OpenUrlAction("https://console.cloud.google.com/storage"),
-            #     "images/storage_icon.png"
-            # ],
-            # [
-            #     "VPC Network",
-            #     OpenUrlAction("https://console.cloud.google.com/networking"),
-            #     "images/vpc_network_icon.png"
-            # ],
-            # [
-            #     "Network Services",
-            #     OpenUrlAction("https://console.cloud.google.com/net-services"),
-            #     "images/network_services_icon.png"
-            # ],
-            # [
-            #     "Cloud Build",
-            #     OpenUrlAction("https://console.cloud.google.com/cloud-build"),
-            #     "images/build_icon.png"
-            # ],
-            # [
-            #     "Container Registry",
-            #     OpenUrlAction("https://console.cloud.google.com/gcr"),
-            #     "images/container_registry_icon.png"
-            # ],
-            # [
-            #     "Security",
-            #     OpenUrlAction("https://console.cloud.google.com/security"),
-            #     "images/security_icon.png"
-            # ],
-            # [
-            #     "IAM Admin",
-            #     OpenUrlAction("https://console.cloud.google.com/iam-admin"),
-            #     "images/iam_admin_icon.png"
-            # ],
-            # [
-            #     "Filestore",
-            #     OpenUrlAction("https://console.cloud.google.com/filestore"),
-            #     "images/filestore_icon.png"
-            # ],
-            # [
-            #     "Stackdriver Logging",
-            #     OpenUrlAction("https://console.cloud.google.com/logs"),
-            #     "images/logging_icon.png"
-            # ],
-            # [
-            #     "Stackdriver Monitoring",
-            #     OpenUrlAction("https://console.cloud.google.com/monitoring"),
-            #     "images/monitoring_icon.png"
-            # ],
-            # [
-            #     "Billing",
-            #     OpenUrlAction("https://console.cloud.google.com/billing"),
-            #     "images/billing_icon.png"
-            # ],
-            # [
-            #     "Marketplace",
-            #     OpenUrlAction("https://console.cloud.google.com/marketplace"),
-            #     "images/marketplace_icon.png"
-            # ],
-            # [
-            #     "Pricing Calculator",
-            #     OpenUrlAction("https://cloud.google.com/products/calculator"),
-            #     "images/pricing_calculator_icon.png"
-            # ]
+            [
+                "Firestore",
+                OpenUrlAction("https://console.firebase.google.com/project/_/database/firestore/data"),
+                "images/firestore.png"
+            ],
+            [
+                "Realtime Database",
+                OpenUrlAction("https://console.firebase.google.com/project/_/database/data"),
+                "images/realtimedb.png"
+            ],
+            [
+                "Storage",
+                OpenUrlAction("https://console.firebase.google.com/project/_/storage"),
+                "images/storage.png"
+            ],
+            [
+                "Hosting",
+                OpenUrlAction("https://console.firebase.google.com/project/_/hosting"),
+                "images/functions.png"
+            ],
+            [
+                "Functions",
+                OpenUrlAction("https://console.firebase.google.com/project/_/functions/list/"),
+                "images/functions.png"
+            ],
+            [
+                "ML Kit",
+                OpenUrlAction("https://console.firebase.google.com/project/_/ml"),
+                "images/functions.png"
+            ],
+            [
+                "Crashlytics",
+                OpenUrlAction("https://console.firebase.google.com/project/_/crashlytics"),
+                "images/crashlytics.png"
+            ],
+            [
+                "Performance",
+                OpenUrlAction("https://console.firebase.google.com/project/_/performance"),
+                "images/performance.png"
+            ],
+            [
+                "Test Lab",
+                OpenUrlAction("https://console.firebase.google.com/project/_/testlab/histories"),
+                "images/testlab.png"
+            ],
+            [
+                "App Distribution",
+                OpenUrlAction("https://console.firebase.google.com/project/_/appdistribution"),
+                "images/appdistribution.png"
+            ],
+            [
+                "Dashboard",
+                OpenUrlAction("https://console.firebase.google.com/project/_/analytics"),
+                "images/analytics.png"
+            ],
+            [
+                "Predictions",
+                OpenUrlAction("https://console.firebase.google.com/project/_/predictions"),
+                "images/predictions.png"
+            ],
+            [
+                "A/B Testing",
+                OpenUrlAction("https://console.firebase.google.com/project/_/experiments/list"),
+                "images/abtesting.png"
+            ],
+            [
+                "Cloud Messaging",
+                OpenUrlAction("https://console.firebase.google.com/project/_/notification"),
+                "images/notification.png"
+            ],
+            [
+                "In-App Messaging",
+                OpenUrlAction("https://console.firebase.google.com/project/_/inappmessaging"),
+                "images/inapp.png"
+            ],
+            [
+                "Remote Config",
+                OpenUrlAction("https://console.firebase.google.com/project/_/config"),
+                "images/config.png"
+            ],
+            [
+                "Dynamic Links",
+                OpenUrlAction("https://console.firebase.google.com/project/_/durablelinks"),
+                "images/durablelinks.png"
+            ],
+            [
+                "AdMob",
+                OpenUrlAction("https://console.firebase.google.com/project/_/admob"),
+                "images/admob.png"
+            ],
+            [
+                "Extensions",
+                OpenUrlAction("https://console.firebase.google.com/project/_/extensions"),
+                "images/extensions.png"
+            ],
+            [
+                "Usage and billing",
+                OpenUrlAction("https://console.firebase.google.com/project/_/usage"),
+                "images/firebase_logo.png"
+            ],
         ]
 
         if query != "":
