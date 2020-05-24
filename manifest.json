@@ -1,0 +1,19 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Firebase Launcher",
+  "description": "Firebase services for Ulauncher",
+  "developer_name": "Oleksandr Mykhailiuta (@ercling)",
+  "icon": "images/firebase_logo.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "Firebase Launcher",
+      "description": "Firebase services for Ulauncher",
+      "default_value": "fb"
+    }
+  ]
+}
