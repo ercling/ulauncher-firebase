@@ -2,6 +2,6 @@
 
 Firebase services for Ulauncher
 
-![Screenshot](/relative/images/screenshot.png?raw=true)
+![Screenshot](/images/screenshot.png?raw=true)
 
 You may also be interested in __Google Cloud Platform services for Ulauncher:__ https://ext.ulauncher.io/-/github-zeue-ulauncher-gcp
